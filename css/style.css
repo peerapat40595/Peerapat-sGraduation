@@ -632,6 +632,11 @@ div.fpm-top-nav .btn {
     display: inline-block;
 }
 
+.mini-img{
+    width: 30px;
+    height: 30px;
+}
+
 #bottom-logo-credit {
 
 }
