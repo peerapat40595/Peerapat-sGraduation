@@ -47,10 +47,7 @@ body h1, body h2 {
     right: 21px;
 }
 .message {
-    margin-left: 10px; 
-    margin-top: 5px;
-    font-size: 14px;
-    line-height: 1.1;
+    padding: 1em;
     float: left;
     text-align: left;
 }
@@ -603,6 +600,7 @@ input[type='checkbox']:checked {
 .modal-body {
     text-align: center;
 }
+
 /* Mobile Menu */
 .mobile-header li div {
     margin: 5px;
