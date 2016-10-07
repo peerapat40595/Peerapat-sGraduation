@@ -245,9 +245,9 @@ $(function(){$('.nearby').hide();
 
 $('#menu').slicknav({label:'Menu'});
 if(/iPad|iPhone|iPod/.test(navigator.userAgent)){
-	$('.slicknav_menu').prepend('<div class="message">&nbsp;<strong>Peerapat\'s Graduation Map</strong></div>');
+	$('.slicknav_menu').prepend('<div class="message">&nbsp;<strong>Find Peerapat</strong></div>');
 } else if (/(android)/i.test(navigator.userAgent)){
-	$('.slicknav_menu').prepend('<div class="message">&nbsp;<strong>Peerapat\'s Graduation Map</strong></div>');
+	$('.slicknav_menu').prepend('<div class="message">&nbsp;<strong>Find Peerapat</strong></div>');
 };
 var reversedPokemonNames=_.invert(pokemonNames);
 var orderedPokemonNames={};
