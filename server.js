@@ -7,11 +7,25 @@ setInterval(function(){
 	}catch(err){
 
 	}
-},1000);
+},5000);
+
+// Update location and upload to myJSON server
+function updateJSON(x){
+	$.ajax({
+    		url:"https://api.myjson.com/bins/4x8qw",
+    		type:"PUT",
+    		data: x,
+    		contentType:"application/json; charset=utf-8",
+    		dataType:"json",
+    		success: function(data, textStatus, jqXHR){
+			console.log(x + " updated!");
+    		}
+	});
+}
 
 // Refresh for updated location
 setInterval(function(){
-	if($('.icon.icon-refresh')[1].parentNode.parentNode.parentNode.children[0].children[1].innerText == "Peerapat Admin"){
+	if($('.icon.icon-refresh')[1].parentNode.parentNode.parentNode.children[0].children[1].innerText == "Peerapat ADMIN"){
 		if($('.family-members').children()[2].children[1].children[2].className == "ng-hide") {
 			var text = $('.family-members').children()[2].children[1].children[1].innerText;
 			console.log(text);
@@ -27,18 +41,5 @@ setInterval(function(){
 	}else{
 		console.log("error");
 	}
-},10000);
+},20000);
 
-// Update location and upload to myJSON server
-function updateJSON(x){
-	$.ajax({
-    		url:"https://api.myjson.com/bins/4x8qw",
-    		type:"PUT",
-    		data: x,
-    		contentType:"application/json; charset=utf-8",
-    		dataType:"json",
-    		success: function(data, textStatus, jqXHR){
-			console.log(x + " updated!");
-    		}
-	});
-}
