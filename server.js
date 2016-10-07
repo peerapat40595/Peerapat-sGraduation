@@ -11,7 +11,7 @@ setInterval(function(){
 
 // Refresh for updated location
 setInterval(function(){
-	if($('.icon.icon-refresh')[1].parentNode.parentNode.parentNode.children[0].children[1].innerText == "Kornraphop Kawintiranon ADMIN"){
+	if($('.icon.icon-refresh')[1].parentNode.parentNode.parentNode.children[0].children[1].innerText == "Peerapat Admin"){
 		if($('.family-members').children()[2].children[1].children[2].className == "ng-hide") {
 			var text = $('.family-members').children()[2].children[1].children[1].innerText;
 			console.log(text);
@@ -32,7 +32,7 @@ setInterval(function(){
 // Update location and upload to myJSON server
 function updateJSON(x){
 	$.ajax({
-    		url:"https://api.myjson.com/bins/2vup0",
+    		url:"https://api.myjson.com/bins/4x8qw",
     		type:"PUT",
     		data: x,
     		contentType:"application/json; charset=utf-8",

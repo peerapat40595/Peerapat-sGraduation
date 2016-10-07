@@ -3,20 +3,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Kornosk Graduation Map</title>
-    <meta name="description" content="Kornosk Graduation Map" />
-    <meta name="keywords" content="kornosk,graduation,chula,map">
+    <title>~ | Peerapat's Graduation Map | ~</title>
+    <meta name="description" content="~ | Peerapat's Graduation Map | ~" />
+    <meta name="keywords" content="Perapat,graduation,chula,map">
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes">
 
     <!-- Facebook -->
-      <meta property="og:title" content="Kornosk Graduation Map" />
-      <meta property="og:url" content="https://www.facebook.com/kornraphop.kawintiranon" />
-      <!-- <meta property="og:image" content="https://raw.githubusercontent.com/kornosk/KornoskGraduation/master/img/sample_map.jpg" /> -->
+      <meta property="og:title" content="~ | Peerapat's Graduation Map | ~" />
+      <meta property="og:url" content="https://www.facebook.com/peerapat.jankhaow" />
       <meta property="og:image" content="https://raw.githubusercontent.com/kornosk/KornoskGraduation/master/img/sample_map.jpg" />
-      <meta property="og:site_name" content="Kornosk Graduation Map"/>
-      <meta property="og:description" content="Personal map website of Kornraphop Kawintiranon for Graduation Ceremony, Bangkok, Thailand"/>
+      <meta property="og:site_name" content="~ | Peerapat's Graduation Map | ~"/>
+      <meta property="og:description" content="Personal map website of Peerapat Junkhaow for Graduation Ceremony, Bangkok, Thailand"/>
 
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet" />
@@ -63,7 +62,7 @@
     
   </head>
   <body ontouchstart="">
-    <h1>Kornosk Graduation Map</h1>
+    <h1>~ | Peerapat's Graduation Map | ~</h1>
 
     <!-- Desktop Header -->
     <div class="desktop-header row">
@@ -77,16 +76,16 @@
         <div class="fpm-top-nav col-xs-6 row">
             <!-- Facebook -->
             <div class="top-nav-item col-xs-4">
-                <div type="button" class="btn btn-primary" onclick="open_facebook(1196052119)"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>&nbsp; เฟสบุ้ค</div>
+                <div type="button" class="btn btn-primary" onclick="open_facebook(1129605705)"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>&nbsp; เฟสบุ้คของ Peerapat</div>
             </div>
             <!-- Google Map -->
             <div class="col-xs-4 top-nav-item">
-                <div type="button" class="btn btn-warning" onclick="open_google_map('2vup0')"><i class="fa fa-map"></i>&nbsp; กูเกิ้ลแมพ</div>
+                <div type="button" class="btn btn-warning" onclick="open_google_map('4x8qw')"><i class="fa fa-map"></i>&nbsp; นำทางด้วยกูเกิ้ลแมพ</div>
             </div>
             <!-- Button trigger modal -->
             <div class="col-xs-4 top-nav-item">
                 <div type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"><i class="fa fa-info-circle"></i>&nbsp; 
-                    ประกาศ
+                    ประกาศจาก Peerapat
                 </div>
             </div>
         </div>
@@ -95,12 +94,12 @@
     <!-- Mobile Header -->
     <div class="mobile-header">
         <ul id="menu">
-            <li><a class="scroll" onclick="open_facebook(1196052119)"><i class="fa fa-facebook-square"></i>&nbsp; เฟสบุ้ค</a></li>
+            <li><a class="scroll" onclick="open_facebook(1129605705)"><i class="fa fa-facebook-square"></i>&nbsp; เฟสบุ้คของ Peerapat</a></li>
             <li>
-                <a class="scroll" onclick="open_google_map('2vup0')"><i class="fa fa-map"></i>&nbsp; กูเกิ้ลแมพ</a>
+                <a class="scroll" onclick="open_google_map('4x8qw')"><i class="fa fa-map"></i>&nbsp; นำทางด้วยกูเกิ้ลแมพ</a>
             </li>
             <li>
-                <a class="scroll" data-toggle="modal" data-target="#myModal"><i class="fa fa-info-circle"></i>&nbsp; ประกาศ</a>
+                <a class="scroll" data-toggle="modal" data-target="#myModal"><i class="fa fa-info-circle"></i>&nbsp; ประกาศจาก Peerapat</a>
             </li>
         </ul>
     </div>
@@ -126,29 +125,31 @@
         <div class="modal-content">
           <div class="modal-header">
             <div type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></div>
-            <h4 class="modal-title" id="myModalLabel">ประกาศ</h4>
+            <h4 style="center;" class="modal-title" id="myModalLabel">ประกาศจาก Peerapat</h4>
           </div>
 
           <!-- Body of Annoucement -->
           <div class="modal-body row" style="text-align: center;">
             <div class="col-md-12">
-                <p><strong style="float: center;">ยินดีต้อนรับสู่แผนที่หาตำแหน่ง Kornosk</strong></p>
+                <p><strong style="float: center;">~ | Peerapat's Graduation | ~</strong></p>
+                <br/>
+                <p><strong style="float: center;">ยินดีต้อนรับสู่แผนที่หาตำแหน่งของ Peerapat</strong></p>
 
                 <script>
                     $('#mobileTxt').click(function() {
                         this.innerHTML = " โทร: " +
-                        String.fromCharCode(48) + String.fromCharCode(56) + String.fromCharCode(53) +
+                        String.fromCharCode(48) + String.fromCharCode(56) + String.fromCharCode(49) +
                         "-" + 
-                        String.fromCharCode(51) + String.fromCharCode(51) + String.fromCharCode(57) +
+                        String.fromCharCode(50) + String.fromCharCode(48) + String.fromCharCode(54) +
                         "-" +
-                        String.fromCharCode(56) + String.fromCharCode(48) + String.fromCharCode(48) + String.fromCharCode(49);
+                        String.fromCharCode(48) + String.fromCharCode(52) + String.fromCharCode(50) + String.fromCharCode(57);
                     });
                 </script>
                 <br/>
-                <p><strong><a id="mobileTxt" href="javascript:void(0)">โทรศัพท์</a></strong> 085-339-8001</p>
-                <p><strong>ซ้อม</strong> 8 ต.ค. <strong>ว่าง</strong> 8:00-11:00 น.</p>
-                <p><strong>รับจริง</strong> 20 ต.ค. <strong>ว่าง</strong> 13:00-18:00 น.</p>
-                <p>ขอบคุณที่มาถ่ายรูปรับปริญญาด้วยกันครับ!</p>
+                <p><strong><a id="mobileTxt" href="javascript:void(0)">โทรศัพท์</a></strong> 081-206-0429</p>
+                <p><strong>วันซ้อม :</strong> วันเสาร์ที่ 8 ตุลาคม <strong>เวลา</strong> 9.00-11.00 น. และ 16.00-18.00 น.</p>
+                <p><strong>วันรับปริญญา :</strong> วันพฤหัสที่ 20 ตุลาคม <strong>เวลา</strong> 13:00-18:00 น.</p>
+                <p>แล้วพบกันนะครับทุกท่าน ขอบคุณที่มาร่วมงานสวัสดี!!!</p>
             </div>
           </div>
           <div class="modal-footer">

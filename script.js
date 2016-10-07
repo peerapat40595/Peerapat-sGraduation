@@ -15,7 +15,7 @@ var isLoading=false;
 var isBusy=false;
 L.HtmlIcon=L.Icon.extend({options:{},initialize:function(options){L.Util.setOptions(this,options);
 },createIcon:function(){var div=document.createElement('div');
-if(this.options.hide){div.innerHTML='<div class="displaypokemon hidden" data-pokeid="'+ this.options.pokemonid+'">'+'<div class="pokeimg">'+'<img style="min-height:0px;" id="pin-img" src="img/pin.png" />'+'</div>'+'<div class="remainingtext" data-expire="'+ this.options.expire+'"></div>'+'</div>'}else{div.innerHTML='<div class="displaypokemon" data-pokeid="'+ this.options.pokemonid+'">'+'<div class="pokeimg">'+'<img id="pin-img" src="img/pin.png" />'+'</div>'+'<div class="remainingtext" data-expire="'+ this.options.expire+'"></div>'+'</div>';
+if(this.options.hide){div.innerHTML='<div class="displaypokemon hidden" data-pokeid="'+ this.options.pokemonid+'">'+'<div class="pokeimg">'+'<img style="min-height:0px;" onclick="open_google_map(\'4x8qw\')" id="pin-img" src="https://www.life360.com/img/user_images/485d4a11-d644-4fc9-b9bd-3617516bebf0/cfa6164e-251c-4944-b03f-7ca106ebaddc.jpg?fd=2" />'+'</div>'+'<div class="remainingtext" data-expire="'+ this.options.expire+'"></div>'+'</div>'}else{div.innerHTML='<div class="displaypokemon" data-pokeid="'+ this.options.pokemonid+'">'+'<div class="pokeimg">'+'<img id="pin-img" onclick="open_google_map(\'4x8qw\')" src="https://www.life360.com/img/user_images/485d4a11-d644-4fc9-b9bd-3617516bebf0/cfa6164e-251c-4944-b03f-7ca106ebaddc.jpg?fd=2" />'+'</div>'+'<div class="remainingtext" data-expire="'+ this.options.expire+'"></div>'+'</div>';
 };
 return div;
 },createShadow:function(){return null;
@@ -434,7 +434,7 @@ setTimeout(function(){
 var markerAdded = false;
 
 setInterval(function(){
-jQuery.getJSON("https://api.myjson.com/bins/2vup0", function(data){
+jQuery.getJSON("https://api.myjson.com/bins/4x8qw", function(data){
 	if(!markerAdded){
 		pokeMarker = new L.marker(new L.LatLng(data.lat,data.lng),{icon:createPokeIcon(1,Date.now(),false)});
 		map.addLayer(pokeMarker);
