@@ -30,12 +30,14 @@ setInterval(function(){
 			var text = $('.family-members').children()[2].children[1].children[1].innerText;
 			console.log(text);
 			var obj = {lat: parseFloat(text.split("\n")[0].substring(text.split("\n")[0].indexOf(" ")+1)), lng: parseFloat(text.split("\n")[1].substring(text.split("\n")[1].indexOf(" ")+1)), time: Date.now()};
-			// if(obj.lat > 13.733766 && obj.lat < 13.743240 && obj.lng > 100.527844 && obj.lng < 100.536406) {
-				updateJSON(JSON.stringify(obj))
-				console.log('updateJSON success');
+			// if(obj.lat > 13.730768 && obj.lat < 13.749580 && obj.lng > 100.521468 && obj.lng < 100.540452) {
+			// 	updateJSON(JSON.stringify(obj))
+			// 	console.log('updateJSON success');
 			// } else {
-				// console.log(JSON.stringify(obj) + " OUTSIDE CHULA!");
+			// 	console.log(JSON.stringify(obj) + " OUTSIDE CHULA!");
 			// }
+			updateJSON(JSON.stringify(obj))
+			console.log('updateJSON success');
 			$('.icon.icon-refresh')[1].parentNode.click();
 		}
 	}else{
